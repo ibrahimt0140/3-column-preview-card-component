@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3-column preview card component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&family=Big+Shoulders+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      min-height: 100vh;
+      font-size: 15px;
+      background-color: hsl(0, 0%, 95%);
+    }
+    .container {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+    }
+    .left {
+      background-color: hsl(31, 77%, 52%);
+      width: 300px;
+      padding-left: 40px;
+      padding-top: 30px;
+      border-radius: 8px 0 0 8px;
+    }
+    .middle {
+      background-color: hsl(184, 100%, 22%);
+      width: 300px;
+      padding-left: 40px;
+      padding-top: 30px;
+    }
+    .right {
+      background-color: hsl(179, 100%, 13%);
+      width: 300px;
+      padding-left: 40px;
+      padding-top: 30px;
+      border-radius: 0 8px 8px 0;
+    }
+    .icon-left {
+      content: url(icon-sedans.svg);
+      margin-bottom: 30px;
+    }
+    .icon-middle {
+      content: url(icon-suvs.svg);
+      margin-bottom: 30px;
+    }
+    .icon-right {
+      content: url(icon-luxury.svg);
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: hsl(0, 0%, 95%);
+      font-family: "Big Shoulders Display", sans-serif;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    p {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 400;
+      line-height: 22px;
+      margin-bottom: 80px;
+    }
+    button {
+      width: 140px;
+      height: 44px;
+      border-radius: 50px;
+      border: none;
+      background-color: hsl(0, 0%, 95%);
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+    .btn1 {
+      color: hsl(31, 77%, 52%);
+    }
+    .btn1:hover {
+      background-color: hsl(31, 77%, 52%);
+      color: hsl(0, 0%, 95%);
+      border: 2px solid hsl(0, 0%, 95%);
+      cursor: pointer;
+    }
+    .btn2 {
+      color: hsl(184, 100%, 22%);
+    }
+    .btn2:hover {
+      background-color: hsl(184, 100%, 22%);
+      color: hsl(0, 0%, 95%);
+      border: 2px solid hsl(0, 0%, 95%);
+      cursor: pointer;
+    }
+    .btn3 {
+      color: hsl(179, 100%, 13%);
+    }
+    .btn3:hover {
+      background-color: hsl(179, 100%, 13%);
+      color: hsl(0, 0%, 95%);
+      border: 2px solid hsl(0, 0%, 95%);
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="left">
+        <span class="icon-left">icon</span>
+        <h1>SEDANS</h1>
+        <p>
+          Choose a sedan for its <br />
+          affordability and excellent <br />
+          fuel economy. Ideal for <br />
+          cruising in the city or on <br />your next road trip.
+        </p>
+        <button class="btn1">Learn More</button>
+      </div>
+      <div class="middle">
+        <span class="icon-middle">icon</span>
+        <h1>SUVS</h1>
+        <p>
+          Take an SUV for its spacious <br />interior, power, and <br />
+          versatility. Perfect for your <br />next family vacation and
+          <br />off-road adventures.
+        </p>
+        <button class="btn2">Learn More</button>
+      </div>
+      <div class="right">
+        <span class="icon-right">icon</span>
+        <h1>LUXURY</h1>
+        <p>
+          Cruise in the best car brands <br />without the bloated prices.
+          <br />Enjoy the enhanced comfort <br />of a luxury rental and arrive
+          <br />in style.
+        </p>
+        <button class="btn3">Learn More</button>
+      </div>
+    </div>
+  </body>
+</html>
